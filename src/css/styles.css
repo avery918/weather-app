@@ -1,0 +1,150 @@
+*,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: url("../img/bg2.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+.App {
+    width: 100%;
+    max-width: 600px;
+    height: 100vh;
+    margin: 0 auto 0;
+    padding: 2em .5em;
+}
+
+
+
+/* search form */
+.form-container, 
+.search {
+    width: 100%;
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9em;
+}
+.search {
+    width: 100%;
+    max-width: 250px;
+    padding: .1em 0;
+    background: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    border: 2px solid rgba(255 , 255, 255, .2);
+    border-radius: 25px;
+    
+}
+
+
+::placeholder {
+    font-weight: 300;
+    color: white;
+    opacity: 1;
+}
+
+
+
+/* main */
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23em;
+    
+}
+
+.city-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: .2em;
+}
+.city-temp{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.icon{
+    width: 100%;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+
+/* detail-list */
+
+.detail-list{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255, 0.1);
+    padding: .5em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.detail-item{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.detail-item-descript {
+    font-size: 1em;
+}
+
+
+/* error */
+.error {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 5em;
+    text-align: center;
+}
+
+/* media queries */
+
+@media (min-width:600px){
+
+    .search {
+        font-size: 1.3rem;
+        padding: .15em;
+    }
+
+    .city-name {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: .2em;
+    }
+    .city-temp{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .icon{
+        width: 100%;
+        max-width: 150px;
+        object-fit: cover;
+    }
+
+    .detail-item{
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: .2em;
+    }
+    
+    .detail-item-descript {
+        font-size: 1.2em;
+    }
+    
+}
